@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./assets/logo_light.png">
+        <title>VIVI Portfolio</title>
+    </head>
+    <body>
+        <audio autoplay loop>
+            <source src="./assets/meydaen_away.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <header>
+            <a href="#start"><img id="logo" src="./assets/logo_dark.svg"></img></a>
+            <a href="#start"><img id="back" class="link-obj" src="./assets/back.svg" onmouseover="this.src='./assets/backHover.svg'" onmouseout="this.src='./assets/back.svg'"></img></a>
+        </header>
+        <div id="outer-wrapper">
+            <section id="start" class="main-section">
+                <div class="main-content year">
+                    <h2><a href="#year22" class="link-obj">2022</a>, 
+                    <a href="#year21" class="link-obj">2021</a>, 
+                    <a href="#year20" class="link-obj">2020</a>, 
+                    <a href="#year19" class="link-obj">2019</a>, 
+                    <a href="#year18" class="link-obj">2018</a>, 
+                    <a href="#year17" class="link-obj">2017</a>, 
+                    <a href="#inspo" class="link-obj">Inspo</a>, 
+                    <a href="#end" class="link-obj">THE END</a></h2>
+                </div>
+            </section>
+            <section id="year22" class="main-section">
+                <div class="main-content">
+                    <h2 class="year">2022</h2>
+                    <span class="link-obj work" id="twistedSpines">Twisted Spines</span><br><!--C4D + MD-->
+                    <span class="link-obj work" id="organicSystems">Organic systems</span><br><!--L-Systems p5-->
+                    <span class="link-obj work" id="europesSeaCondition">Europe's sea condition</span><br><!--DataVis-->
+                    <span class="link-obj work" id="snailing">Snailing</span><br><!--snail p5-->
+                    <span class="link-obj work" id="viviLogo">VIVI Logo</span><br>
+                    <span class="link-obj work" id="wilmaBee">Wilma Bee</span><br><!--Wilma Bee Animation-->
+                    <span class="link-obj work" id="dissolvingMind">dissolving MIND</span><br><!--Siebdruck-->
+                </div>
+            </section>
+            <section id="year21" class="main-section">
+                <div class="main-content">
+                    <h2 class="year">2021</h2>
+                    <span class="link-obj work" id="mariana">Mariana</span><br><!--Unity Game-->
+                    <span class="link-obj work" id="processingAPoster">Processing a poster</span><br><!--Casey Reas Poster-->
+                    <span class="link-obj work" id="nameComposition">Name composition</span><br><!--Kickvis Exercise-->
+                    <span class="link-obj work" id="portraitStudy">Portrait study</span><br><!--sketch book study-->
+                    <span class="link-obj work" id="fierceness">Fierceness</span><br><!--procreate character-->
+                </div>
+            </section>
+            <section id="year20" class="main-section">
+                <div class="main-content">
+                    <h2 class="year">2020</h2>
+                    <span class="link-obj work" id="aktzeichnen">Aktzeichnen</span><br><!--ZHdK-->
+                </div>
+            </section>
+            <section id="year19" class="main-section">
+                <div class="main-content">
+                    <h2 class="year">2019</h2>
+                    <span class="link-obj work" id="figuerlichesZeichnen">Figürliches Zeichnen</span><br><!--SfG-->
+                </div>
+            </section>
+            <section id="year18" class="main-section">
+                <div class="main-content">
+                    <h2 class="year">2018</h2>
+                    <span class="link-obj work" id="bamboo">Bamboo</span><br><!--Stuhlmodelle 01.2018-->
+                </div>
+            </section>
+            <section id="year17" class="main-section">
+                <div class="main-content">
+                    <h2 class="year">2017</h2>
+                    <span class="link-obj work" id="zwischenBitterUndSuess">Zwischen bitter und süss</span><br><!--Maturarbeit 29.09.2017-->
+                </div>
+            </section>
+            <section id="inspo" class="main-section">
+                <div class="main-content">
+                    <span class="link-obj work" id="inspo">Inspo</span>
+                </div>
+            </section>
+            <section id="end">
+                <h2>THE END</h2>
+                <div id="end-content">
+                    <br>
+                    <p>Hi, I'm Vivi. <br> Welcome at the end of it all.</p>
+                    <br>
+                    <p>
+                        I'm a Swiss computer science and design student that likes to do all kinds of stuff (as you might have seen).
+                        <br>This is my personal portfolio and another one of my projects in itself. This is the first website I've programmed.
+                    </p>
+                    <br>
+                    <p>
+                        Let's see what the future holds. Stay kind, stay curious. Thanks for being here.
+                    </p>
+                    <br>
+                    <p>
+                        - VIVI
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div id="overlay">
+            <div id="overlay-box">
+                <div id="overlay-content">
+                    <div id="overlay-fixed">
+                        <img id="close" class="link-obj" src="./assets/close.svg" onmouseover="this.src='./assets/closeHover.svg'" onmouseout="this.src='./assets/close.svg'"></img>
+                    </div>
+                    <div id="txt-title"></div>
+                    <div id="txt-content"></div>
+                    <div id="images"></div>
+                    <div id="art-info"></div>
+                </div>       
+            </div>
+        </div>
+        <script src="works.js"></script>
+        <script src="script.js"></script>
+    </body>

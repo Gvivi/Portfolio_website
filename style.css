@@ -1,0 +1,173 @@
+@font-face {
+    font-family: gulax;
+    src: url(./Gulax-master/fonts/webfonts/Gulax-Regular.woff);
+}
+@font-face {
+    font-family: Inconsolata;
+    font-weight: 400;
+    src: url(./Inconsolata/static/Inconsolata/Inconsolata-Regular.ttf);
+}
+:root {
+    --headerTopPad: 2vh;
+    --headerHeight: 16vh;
+    --mainContentHeight: 80vh;
+    --mainContentGap: 10vw;
+    --bigFont: 12vh;
+    --midFont: 10vh;
+    --bigTxtFont: 4vh;
+    --txtTitle: calc(3vw + 3vh);
+    --txtFont: calc(1vw + 1vh);
+    --marginBottom: 3vh;
+    --endWidth: 50vw;
+    --bg-color: #F5F5DC;
+    --primary-color: #000000; 
+    --secondary-color: #0000A1;
+}
+*{
+    cursor: url('./assets/cursor.png'), auto;
+    font-family: gulax;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+    color: var(--primary-color);
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    font-size: var(--bigFont);
+}
+.link-obj:hover {
+    cursor: url('./assets/cursorHover.png'), auto;
+    color: var(--secondary-color);
+}
+#logo {
+    height: calc(var(--headerHeight) - var(--headerTopPad));
+    width: calc(var(--headerHeight) - var(--headerTopPad));
+}
+#back {
+    height: calc(4vh + 1vw);
+    width: calc(4vh + 1vw);
+    margin-right: 3vw;
+}
+header {
+    padding-left: 2vw;
+    padding-top: var(--headerTopPad);
+    justify-content:space-between;
+    display: flex;
+    width: 100vw;
+    height: var(--headerHeight);
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+}
+#outer-wrapper {
+    background: var(--bg-color);
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none; /*hide scrollbar firefox*/
+    -ms-overflow-style: none; /*hide scrollbar different browser*/
+}
+/*hide scrollbar chrome*/
+::-webkit-scrollbar {
+    display: none;
+}
+.main-section {
+    font-size: var(--midFont);
+    width: 100vh;
+}
+.main-content {
+    width: calc(var(--mainContentHeight) - var(--marginBottom));
+    margin-bottom: var(--mainContentGap);
+    margin-left: var(--marginBottom);
+}
+#end {
+    transform: rotate(90deg) translateX(var(--mainContentHeight));
+    transform-origin: top right;
+    width: var(--mainContentHeight);
+    height: var(--mainContentHeight);
+    padding-right: var(--marginBottom);
+    overflow: scroll;
+    scrollbar-width: none; /*hide scrollbar firefox*/
+    -ms-overflow-style: none; /*hide scrollbar different browser*/
+}
+#end-content {
+    font-size: var(--bigTxtFont);
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: url('./assets/cursor.png'), auto;
+}
+#overlay-box {
+    margin: auto;
+    margin-top: 2vh;
+    display: block;
+    background: var(--bg-color);
+    width: 80vw;
+    height: 96vh;
+    border-radius: 1vw;
+    z-index: 3;
+    overflow: scroll;
+    scrollbar-width: none; /*hide scrollbar firefox*/
+    -ms-overflow-style: none; /*hide scrollbar different browser*/
+}
+#overlay-content {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+#overlay-fixed {
+    position: fixed;
+    display: flex;
+    width: 73vw;
+    justify-content: right;
+}
+#close {
+    height: calc(1.5vw + 1.5vh);
+    width: calc(1.5vw + 1.5vh);
+}
+#txt-title {
+    font-size: var(--txtTitle);
+} 
+#txt-content {
+    margin-top: 2%;
+    font-size: var(--txtFont);
+    font-family: Inconsolata;
+    font-weight: 400;
+}
+#images {
+    margin-top: 3%;
+    text-align: center;
+}
+.image {
+    margin: 1%;
+    max-height: 80vh;
+    width: auto;
+    max-width: 70vw;
+    height: auto;
+}
+p {
+    font-family: Inconsolata;
+    font-weight: 400;
+}
+
+.link-txt {
+    font-family: Inconsolata;
+    font-weight: 400;
+}
