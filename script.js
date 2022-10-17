@@ -107,9 +107,11 @@ document.querySelectorAll("#close").forEach(overlay => {
     });
 });
 
+/*
 //sound effect on click
 var audio = new Audio("./assets/mixkit-click.mp3");
 
 document.onclick = function() {
   audio.play();
 }
+*/
